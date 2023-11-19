@@ -1,27 +1,103 @@
-# MapasApp
+# AppMaps
+No usar directamente en AngularCLI (a menos que esten craedas las varibles de enterno), ya que las variables de entrono se crean basados en el .env
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+## descripcion:
+<p>
+En esta aplicacion tendremos una especie de google maps tendremos las funciones de zoom, colocar marcadores en lugares deseados, podremos ver la longitud y latitud del lugar en el que estamos y tendremos direcciones guardadas de forma predeterminada
+</p>
 
-## Development server
+### objetivo:
+<p>
+En esta aplicacion el enfoque principal es integrar librerias o codigo de JavaScript que no esta escrito para angular directamente
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### temas vistos en esta app:
+<p>
+1.Manejo de librerías escritas en JavaScript en TypeScript
 
-## Code scaffolding
+2.Uso de Mapas basados en Mapbox (el API es similar a la de Google Maps)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3.Marcadores
 
-## Build
+4.EventosFlyTo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+5.Coordenadas geográficas
 
-## Running unit tests
+6.Componentes para re-utilización de mapas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+7.Mantener objetos de forma persistente
 
-## Running end-to-end tests
+8.@types
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+9.Zoom
 
-## Further help
+10.Range
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+11.Crear los componentes y rutas con angular schematics
+
+12.Archivo ENV y MapboxKey
+
+13.Crear env automáticamente
+
+14.ViewChild - ElementRef
+
+15.Guardar y leer del LocalStorage
+
+16.Actualizar storage cuando se mueven los marcadores
+
+17.Standalone Component
+
+¿Qué son?
+
+¿Para qué sirven?
+
+¿Cómo usarlos?
+
+¿Cómo cargarlos de forma perezosa?
+
+¿Cómo conectarlos entre sí?
+
+¿Cómo integrarlos en módulos y componentes tradicionales?
+</p>
+
+### Paginas usadas:
+<p>
+https://www.mapbox.com/
+
+https://www.google.com/
+
+https://getbootstrap.com/
+
+
+</p>
+
+## Acceso al proyecto:
+### pasos
+<p>
+1. Clonar el .env.template y renombrarlo a .env
+2. Llenar las variables de entrorno acorde
+3. Crear Angular Envs (opcional)
+
+```
+npm rum envs
+```
+
+4. Para development ejecutar:
+
+```
+npm rum start
+```
+
+
+5. Para produccion ejecutar:
+
+```
+npm rum buil
+```
+
+</p>
+
+## tecnologias usadas:
+<p>
+Angular 16.1.5
+</p>
