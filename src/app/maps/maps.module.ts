@@ -11,6 +11,8 @@ import { MapsScreenComponent } from './screens/maps-screen/maps-screen.component
   imports: [
     CommonModule
   ],
-  exports:[MapsScreenComponent],
+  exports:[
+    MapsScreenComponent
+  ],
 })
 export class MapsModule { }
