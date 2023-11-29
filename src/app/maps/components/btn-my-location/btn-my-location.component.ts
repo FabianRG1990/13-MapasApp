@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MapService, PlacesService } from '../../services';
 
 @Component({
   selector: 'app-btn-my-location',
@@ -8,8 +9,17 @@ import { Component } from '@angular/core';
 export class BtnMyLocationComponent {
 
 
+  constructor(
+    private placesServices: PlacesService,
+    private mapService: MapService,
+  ){}
+
 goToMyLocation() {
-  console.log('ir a mi ubicacion');
+
+  if(!this.placesServices.isUserLocationReady) return;
+  if(!this.mapService.isMapReady) return;
+
+  this.mapService.flyto( this.placesServices.userLocation! )
 
 }
 
